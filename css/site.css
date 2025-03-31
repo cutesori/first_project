@@ -97,7 +97,14 @@ header {
    /* display: inline-block; */
     height: 414px;
 }
-.MG {margin-right:28px; margin-left:28px}
+
+a:link    { text-decoration: none; color: #000000; }
+a:visited { text-decoration: none;color: #000000; }
+a:hover   { color: #7A4E8A; text-decoration: none }
+a:active  { color: #7A4E8A; text-decoration: none }
+
+#bestBoxup div {cursor: pointer;}
+.MG {margin-right:28px; margin-left:28px;}
 .MG2 {margin-right: 28px;}
 /* 인기상품 박스 안 배치 */
 #bestBoxup div img {position: relative;display: block; padding-bottom: 28px;}
