@@ -1,0 +1,175 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+*{  list-style: none;
+    margin: 0;
+    padding: 0;
+    font-family: "Noto Sans KR", sans-serif;}
+
+.container {
+    /* border: red 0.25px solid; */
+    width: 1284px; height: 100%; margin: 0 auto; 
+    padding: 0 ; }
+
+    ul, li, a{text-decoration: none;}
+
+/* 해더 */
+header {
+    background: #7A4E8A;
+    width: 100%; height: 157px; 
+    margin: 0 auto; 
+    }
+.logo {
+    position: absolute; top: 30px;left: 0;right: 0;margin: 0 auto;
+    width: 148px; height: 50px;}
+
+#NV2 a, #NV2right {color: #fff;}
+
+#NV2 {margin: 0 auto; background:#7A4E8A; width: 100%;height: 100%;}
+#NV2left a, #NV2right li {padding: 30px 30px; display: inline-block;}
+#NV2right > li:last-child {padding: 0;}
+#NV2left {float: left; position: relative; top:70px;}
+#NV2right {float: right;position: relative; top:70px;}
+/* 컨텐츠 시작 */
+h3 {font-size: 24px;}
+#up {width: 100%; height: 800px;}
+
+#up  img {float: left; margin-top: 83px; width: 642px;height: 642px;}
+
+.con_title {float: left; margin-top: 83px; margin-left: 28px; display: block; width:614px}
+.con_title hr {background-color: #7A4E8A; height: 1px; border: 0; width: 614px;}
+.con_title .cost {font-size: 24px; font-weight: bold;}
+.con_title h3 {font-size: 24px; }
+.con_title h5 {font-size:24px ; font-weight: 400;margin-bottom:20px ;}
+.con_title .HRT> .hrt, .hrtt {float: right; font-size: 30px;color: #7A4E8A; cursor: pointer;}
+.con_title .hrtt {display: none;}
+
+
+.con_title span:nth-of-type(1) {font-size: 14px; color: #7A4E8A;}
+/* 테이블 */
+.con_title .tb2 td {line-height: 50px;}
+.con_title .tb2 {margin-top: 0;}
+.con_title .tb2 th {color: #7A4E8A;}
+.con_title .tb2 tr:last-child td {font-weight: 900; font-size: 24px;}
+.con_title .tb2 tr:last-child th {font-weight: 800;}
+
+.con_title table td {font-size: 14px; line-height: 30px;}
+.con_title table th {height: 10px;text-align: left; font-size: 15px; font-weight: 600; width: 82px;line-height: 30px;}
+.con_title table tr {width: 505px; height: 10px;}
+.con_title table {margin-top: 17px; table-layout:fixed; }
+
+/* 셀렉트 */
+.tb2 select {border-radius: 8px;width: 497px; 
+    height: 30px;border: 1px solid #7A4E8A;
+    background-color: #fff;padding: 0 10px;
+    appearance: none; -webkit-appearance: none; -moz-appearance: none;
+    outline: none;
+
+    background-image: url(/img/sub01/select.png);
+                background-repeat: no-repeat;
+                background-position: calc(100% - 10px) center;
+
+
+    }
+.tb2 option {padding: 0 10px;}
+.tb2 th {vertical-align:middle;}
+.tb2 tr:nth-of-type(1) {height:10px;}
+/* .tb2 {height: 140px;} */
+
+/* 버튼 */
+.con_title button {width: 238px; height: 60px; border: none; border-radius: 10px; 
+                   float: right; font-size: 24px;cursor:pointer;
+                }
+.con_title button:nth-of-type(1) {color: #fff; background-color: #7A4E8A; font-weight: 500;margin-right: 4px;}
+.con_title button:nth-of-type(2) {color: #7A4E8A; border: 1px solid #7A4E8A; background-color: #fff;margin-right: 22px;}
+
+/* 상단 취향 추천 */
+#recomand {width: 100%; height: 375px;}
+#recomand h3 {text-align: center; margin-bottom: 28px; font-size: 24px;}
+.containpic img {float: left;margin-right: 24px ;margin-left: 0; width: 237px;height: 240px;}
+.containpic img:last-child {margin-right:0 ;}
+
+/* 상세 */
+#detail {width: 100%; height: 5025px;text-align: center;}
+#detail img:nth-child(1) {width:1284px ;height: 1284px; margin-bottom: 83px;}
+#detail img {margin-bottom: 83px; }
+#detail p {text-align: center;margin-bottom: 83px; font-size: 14px; line-height: 25px;}
+/* 리뷰 */
+#review {width: 100%; height: 765px;text-align: center;}
+.star {width: 1284px; height: 99px; border-radius: 10px;background-color: #7A4E8A; margin: 28px 0; position: absolute;}
+.star span {color: #fff;}
+
+
+.star_span span {padding: 0 87px; font-size: 13px;}
+.star_span {margin-top: 13px;}
+.star_h {text-align: center; margin-top: 10px;}
+.star_h span {padding: 0 70px; font-size: 24px;}
+table th {text-align: right; padding-right: 28px;}
+table td  {text-align: left;}
+table th {vertical-align: top;}
+table img {vertical-align: top;}
+table {font-size: 14px; line-height: 25px;}
+#fna > .secrr { margin-top: 30px;}
+
+
+#review .mini span {margin-right: 10px;font-size: 12px; font-weight: bold; border: 1px solid #7A4E8A; color: #7A4E8A;padding: 1px 6px 2px 6px;background-color: #fff; border-radius: 10px;}
+#review .mini {position: relative;top:158px; cursor: pointer;}
+#review .mini span:hover {color: #fff; background-color: #7A4E8A;}
+
+#down { position: relative; top: 153px;}
+
+#down tr:nth-of-type(even) td {border-bottom: 28px solid transparent;}
+/* hr선 속성 */
+.a, .b, .c, .d, .e, .f, .g {background-color: #969696; height: 1px; border: 0; opacity: 0.5;}
+/* .a {position: relative; top: 275px;}
+.b {position: relative; top: 405px;}
+.c {position: relative; top: 535px;} */
+
+/* .d {position: relative; top: 70px;}
+.e {position: relative; top: 145px;}
+.f {position: relative; top: 225px;}
+.g {position: relative; top: 310px;} */
+
+.h, .i {background-color:#7A4E8A; height: 1px; border: 0;}
+
+.container2 {width: 843px;height: 100%;margin: 0 auto;padding: 0; }
+
+#fna tr {border-bottom: 1px solid rgba(200, 200, 200, 0.5);}
+
+#fna h3 {margin-top: 28px; margin-bottom: 40px;}
+#fna {width: 100%; height: 595px; text-align: center;}
+/* #fn table, #review table {border-collapse: collapse;}
+#fn tr, #fn td, #fn th, #review tr, #review td, #review th {border-top: 1px solid #eee;} */
+
+#fn tr:nth-of-type(even) td {border-bottom: 28px solid transparent;}
+#fna .mini { cursor: pointer;}
+#fna .mini span:hover {color: #fff; background-color: #7A4E8A;}
+#fna  .mini span {margin-right: 10px;font-size: 12px; font-weight: bold; border: 1px solid #7A4E8A; color: #7A4E8A;padding: 1px 6px 2px 6px;background-color: #fff; border-radius: 10px;}
+
+#as {width: 100%; height: 530px;text-align: center; margin: 0 auto;}
+#as ul li {list-style: none; line-height:32px ; font-size: 14px;}
+#as h3 {margin-bottom: 20px;}
+#as h3:nth-of-type(2) {margin-top: 75px;}
+#as ul li b {color: #7A4E8A;}
+
+
+/* 푸터 */
+footer {
+    background:#7A4E8A;
+    width: 100%; height: 150px; 
+}
+
+footer .container {position: relative;}
+footer img { 
+   position: absolute; top: 75px; left: 0;right: 0; margin: 0 auto; 
+    width: 148px; height: 50px;
+ }
+ .Fimg {text-align: center; z-index: 0;}
+ footer p {  
+    font-size: 9px; text-align: left;
+    color: #fff;
+}
+ .F1{ float: left; position: absolute; bottom: 24px;}
+.footerR {float: right; margin-top: 28px;}
+.F3 {margin-top:14px;}

@@ -1,0 +1,224 @@
+@charset "UTF-8";
+
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+*{  list-style: none;
+    margin: 0;
+    padding: 0;
+    font-family: "Noto Sans KR", sans-serif;}
+.container {
+    width: 1284px; height: 100%; margin: 0 auto; 
+    padding: 0 ; 
+    /* border:1px solid orange */
+}  
+    /* 주요 컨텐츠 사이즈 */
+
+ul, li, a{text-decoration: none;}
+
+/* 해더 */
+header {
+    background: rgb(56, 139, 56);
+    width: 100%; height: 867px; 
+    margin: 0 auto; 
+    
+}
+#slider {
+    background-image: url(/img/topimg.png); height:867px ; 
+    background-size: cover;
+    background-position: center;
+}
+.logo {
+    position: absolute; top: 30px;left: 0;right: 0;margin: 0 auto;
+    width: 148px; height: 50px;
+}
+/* 윗네비 */
+#NV1 {
+    
+    width: 1287px; height: 30px; 
+    position: absolute; top: 98px; left: 50%; transform: translate(-50%, -50%);
+    margin: 0 auto;
+}
+#NVleft li a, #NVright li a {color: #fff;}
+#NVleft li, #NVright li {padding: 10px 18px; display: inline-block;;}
+#NVleft {float: left;}
+#NVright {float: right;}
+
+/* 두번째 보라 네비 */
+#NV2 a, #NV2right {color: #fff;}
+
+#NV2 {margin: 0 auto; background:#7A4E8A; width: 100%; height: 88px;}
+#NV2left a, #NV2right li {padding: 30px 30px; display: inline-block;}
+#NV2right > li:last-child {padding: 0;}
+#NV2left {float: left;}
+#NV2right {float: right;}
+
+
+
+/* 컨텐츠 */
+#event {
+   width: 100%;
+    height: 960px;
+    margin: 0 auto;
+}
+
+.search::placeholder {color: #fff;}
+.search { 
+    color: #fff;
+    border: none; background-color: rgba(0, 0, 0, 0);
+    text-align: center; width: 514px; height: 38px;outline: none;
+   
+}
+
+#finder {width: 514px; height: 38px;text-align: center; 
+         border-radius: 50px;background: #b8b8b8; 
+         margin: 20px auto; position: relative; 
+        }
+#finder i { outline: none; position: absolute; top: 14px; right: 20px; color: #fff;}
+
+/* 이벤트 기획전 */
+.eventt {font-size: 38px; padding: 113px 0 23px 0;text-align: center;}
+.eventt span {color: #7A4E8A;}
+.eventimg {width: 100%; height: 633px; display: inline-block;}
+
+/* 인기상품 */
+#best {
+    
+    width: 100%;
+    height: 1030px;
+    margin: 0 auto;
+}
+/* 중간만 마진을 줘야했던거임~~*/
+.bestt {font-size: 38px; padding: 0 0 31px 0;text-align: center;}
+.bestt b {color: #7A4E8A;}
+#bestBoxup div, #Nbox div {
+   position: relative;margin-bottom: 28px;
+   float: left;
+   /* display: inline-block; */
+    height: 414px;
+}
+.MG {margin-right:28px; margin-left:28px}
+.MG2 {margin-right: 28px;}
+/* 인기상품 박스 안 배치 */
+#bestBoxup div img {position: relative;display: block; padding-bottom: 28px;}
+#bestBoxup div .f2 {font-size:14px; font-weight: bold; display:block; position: relative;}
+#bestBoxup div span {float:right; position:relative; color: #7A4E8A;}
+#bestBoxup div p {display: inline-block; position: relative; margin-bottom:5px;}
+
+/* 인기상품 글안의 악세서리 */
+#bestBoxup .Acc {   
+    width: 10px; height: 10px; border-radius: 10px;
+}
+#Nbox .Acc {   
+    width: 10px; height: 10px; border-radius: 10px;
+}
+
+.Accc span {margin-right: 6px ;margin-top:15px ;}
+#bestBoxup .fi {background-color:#AC8FBC; }
+#bestBoxup .fo {background-color: #37363A; }
+#bestBoxup .tr {background-color: #A67856; }
+#bestBoxup .two {background-color: #E8E1D7; }
+#bestBoxup .one {background-color: #D0D5E9; }
+
+#bestBoxup .six {background-color: #DDE2CE; }
+#bestBoxup .svn {background-color: #586B51; }
+
+#Nbox .eig {background-color: #2F3035; }
+#Nbox .nine {background-color: #7C667A; }
+#Nbox .ten {background-color: #1A4394; }
+#Nbox .elv {background-color: #141F40; }
+#Nbox .tlv {background-color: #E0DDD8; }
+#Nbox .ttn {background-color: #75998E; }
+.hrt {float: right ; position: relative; bottom: 0px; font-size:21px ;
+cursor: pointer;}
+
+.hrt:hover::after {content: "♥"; position: absolute; left: 0px; }
+
+/* 신상품 */
+#new {
+   
+    width: 100%;
+    height: 600px;
+    margin: 0 auto;
+}
+.newt {font-size: 38px; margin-bottom: 31px; text-align: center;padding: 0;}
+.newt b {color: #7A4E8A;}
+/* 신상품 박스 안 배치 */
+#Nbox div img {position: relative;display: block; padding-bottom: 28px;}
+#Nbox div .f3 {font-size:14px; font-weight: bold; display:block; position: relative;}
+#Nbox div span {float:right; position:relative; color: #7A4E8A;}
+#Nbox div p {display: inline-block; position: relative; margin-bottom:5px;}
+
+/* 중간사진 */
+#pic {
+    background-image: url(/img/downpic.png);
+    background-size:cover;
+    width: 100%;
+    height: 600px;
+    margin: 0 auto;
+}
+
+/* 추천상품 */
+#reco {
+   
+    width: 100%;
+    height: 800px;
+    margin: 0 auto;
+}
+.recoP {font-size: 38px; text-align: center; margin-top: 84px; margin-bottom: 28px;}
+.recoP b {color: #7A4E8A;}
+
+
+#recobox .big {z-index: 10;width: 628px; height: 628px; margin-right: 28px; float: left;position: relative;cursor: pointer; }
+#recobox .small {width: 300px; height: 300px; float: left; margin-bottom: 28px;position: relative;cursor: pointer;}
+#recobox .Margin {margin-right:28px;} 
+
+.big:hover::after {
+    content:""; position:absolute; top:0; left:0; 
+    width:100%; height:100%; background:#000000; opacity:0.3;    
+}
+.small:hover::after {
+    content:""; position:absolute; top:0; left:0; 
+    width:100%; height:100%; background:#000000; opacity:0.3;    
+}
+.RCTT { text-align: left; position: absolute; top: 20px;left: 28px;
+    float: left; z-index: 20;  width: 100%; height: 100%;
+    position: absolute;  
+    color: #fff; transition: all 0.35s ease-in-out; opacity:0; }
+    
+.RCTT:hover {opacity:1; visibility: visible; }
+/* 안 글씨 */
+.ok {margin-top:22px ; margin-bottom: 10px; font-size: 28px; font-weight: bold;}
+.ok2 {font-size: 18px;}
+.ok3 {margin-top: 435px; font-size: 22px; font-weight: bold; float: left;}
+.ok4 {float:right; margin-top: 435px; margin-right: 56px;}
+
+.sok2 {font-size: 22px; font-weight: bold; position: absolute; bottom: 46px;}
+
+
+/* 푸터 */
+footer {
+    background:#7A4E8A;
+    width: 100%; height: 150px; 
+}
+
+footer .container {position: relative;}
+footer img { 
+   position: absolute; top: 75px; left: 0;right: 0; margin: 0 auto;
+    /* margin-top: 75px ; margin-bottom: 25px;  */
+   
+    width: 148px; height: 50px;
+ }
+
+ .Fimg {text-align: center; z-index: 0;}
+
+ footer p {
+    /* display: inline-block;  */
+    font-size: 9px; text-align: left; 
+    /* position: relative;margin: 0 auto; */
+    color: #fff;
+}
+ .F1{ float: left; position: absolute; bottom: 24px;}
+
+.footerR{float: right; margin-top: 28px;}
+.F3 {margin-top:14px ;}
