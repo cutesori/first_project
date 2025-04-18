@@ -24,7 +24,7 @@ header {
     
 }
 #slider {
-    background-image: url(/img/topimg.png); height:867px ; 
+    background-image: url(./img/topimg.png); height:867px ; 
     background-size: cover;
     background-position: center;
 }
