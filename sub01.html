@@ -11,25 +11,33 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script>
         $(document).ready(function(){
-            $(".HRT").hover(function(){
-                $(".hrtt").show()
-                $(".hrt").hide();
-            }, function(){
-                $(".hrtt").hide()
-                $(".hrt").show();
-            });
-            
-            $(".HRT").click(function(){
-                if($(".hrt").css("display")=='block'){
-                    $(".hrtt").fadeIn()
-                    $(".hrt").hide()
-                }else {
-                    $(".hrtt").hide()
-                    $(".hrt").fadeIn()
+            let isClicked = false;
+
+            $(".HRT").on("mouseenter", function(){
+                if (!isClicked) {
+                    $(".hrtt").show();
+                    $(".hrt").hide();
                 }
-                
             });
 
+            $(".HRT").on("mouseleave", function(){
+                if (!isClicked) {
+                    $(".hrtt").hide();
+                    $(".hrt").show();
+                }
+            });
+
+            $(".HRT").on("click", function(e){
+                isClicked = !isClicked;
+
+                if (isClicked) {
+                    $(".hrtt").fadeIn();
+                    $(".hrt").hide();
+                } else {
+                    $(".hrtt").hide();
+                    $(".hrt").fadeIn();
+                }
+            });
         });
     </script>
 
